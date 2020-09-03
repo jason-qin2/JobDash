@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Landing from './Components/Landing'
+import NavBar from './Components/NavBar'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavBar/>
+    <Landing />
   </React.StrictMode>,
   document.getElementById('root')
 );

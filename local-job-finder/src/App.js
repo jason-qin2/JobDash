@@ -3,9 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const getLanding = () => {
+    return <header>Hi!</header>
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
+        {getLanding()}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
