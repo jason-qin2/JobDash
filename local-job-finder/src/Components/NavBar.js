@@ -24,9 +24,11 @@ function NavBar() {
             <NavItem>
               <NavLink href="/Employees/">Employees</NavLink>
             </NavItem>
+            {
+              /*
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
+            </NavItem>*/}
           </Nav>
         </Collapse>
       </Navbar>

@@ -19,7 +19,7 @@ function Landing() {
             </Jumbotron>
 
             <Col>
-                <Card>
+                <Card style={{width:"400px"}}>
                     <CardHeader>
                         Current Stats
                 </CardHeader>
@@ -27,9 +27,9 @@ function Landing() {
                         <Table>
                             <tbody>
                                 <Col>
-                                    <tr><th scope='row'>Current Jobs being Offered</th><td>2</td></tr>
-                                    <tr><th scope='row'>Successful Jobs Completed</th><td>2</td></tr>
-                                    <tr><th scope='row'>Total Job-seekers</th><td>2</td></tr>
+                                    <tr><th scope='row'>No. Jobs being Offered</th><td>2</td></tr>
+                                    <tr><th scope='row'>No. Successful Jobs Completed</th><td>2</td></tr>
+                                    <tr><th scope='row'>No. Total Job-seekers</th><td>2</td></tr>
                                 </Col>
                             </tbody>
                         </Table>
