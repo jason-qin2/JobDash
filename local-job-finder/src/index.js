@@ -5,6 +5,7 @@ import App from './App';
 import Landing from './Components/Landing'
 import NavBar from './Components/NavBar'
 import About from './Components/About'
+import Login from './Components/Login'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -25,6 +26,10 @@ ReactDOM.render(
           <Route path="/About">
             <About />
           </Route>
+          <Route path="/Login">
+            <Login/>
+          </Route>
+
           <Route path="/Users">
             <h2>Users</h2>
           </Route>

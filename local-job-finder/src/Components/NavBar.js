@@ -15,6 +15,7 @@ function NavBar() {
         <Col>
         <Navbar color="light" light>
         <NavbarBrand href="/" className="mr-auto">Local Job Finder</NavbarBrand>
+        <Link to="/Login" style={{marginRight:"20px"}} >Sign in</Link>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
