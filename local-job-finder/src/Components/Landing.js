@@ -12,7 +12,7 @@ function Landing() {
                 <hr className="my-2" />
                 <p>We are excited to bring you the right people for the job.</p>
                 <p className="lead">
-                    <Button color="primary" href="/About/">Learn More</Button>
+                    <Button color="primary" href="/About">Learn More</Button>
                 </p>
             </Jumbotron>
 

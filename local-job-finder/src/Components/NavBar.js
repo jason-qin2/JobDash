@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
 import {Row, Col, Button, Card, CardHeader, CardFooter, CardBody, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Table} from 'reactstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function NavBar() {
     const [collapsed, setCollapsed] = useState(true);
@@ -13,16 +19,16 @@ function NavBar() {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/About/">About Us</NavLink>
+              <NavLink href="/About">About Us</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Jobs/">Jobs</NavLink>
+              <NavLink href="/Jobs">Jobs</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Request/">Job Request</NavLink>
+              <NavLink href="/Request">Job Request</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Employees/">Employees</NavLink>
+              <NavLink href="/Users">Employees</NavLink>
             </NavItem>
             {
               /*
@@ -32,6 +38,8 @@ function NavBar() {
           </Nav>
         </Collapse>
       </Navbar>
+
+      
       </Col>
     );
 }

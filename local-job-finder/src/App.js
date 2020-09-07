@@ -19,10 +19,10 @@ export default function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/About">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/Users">Users</Link>
             </li>
           </ul>
         </nav>
@@ -33,11 +33,14 @@ export default function App() {
           <Route path="/Home">
             <Landing />
           </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
           <Route path="/About">
             <About />
           </Route>
-          <Route path="/">
-            <Landing />
+          <Route path="/Users">
+            <h2>Users</h2>
           </Route>
         </Switch>
       </div>
