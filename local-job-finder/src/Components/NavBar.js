@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import logo from '../logo192.png';
+import logo from '../favicon.ico';
 
 function NavBar() {
     const [collapsed, setCollapsed] = useState(true);
@@ -15,7 +15,7 @@ function NavBar() {
     return (
         <Col>
         <Navbar color="light" light>
-        <NavbarBrand href="/" className="mr-auto">JobDash<logo></logo></NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto"><img src={logo} /> JobDash </NavbarBrand>
         <Link to="/Login" style={{marginRight:"20px"}} >Sign in</Link>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
