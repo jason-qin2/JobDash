@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Jumbotron, Row, Col, Button, Link, Card, CardHeader, CardFooter, CardBody, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Table, Input } from 'reactstrap';
 
-class Login extends React.Component {
+class Register extends React.Component {
 
     render() {
         return (
@@ -36,5 +36,5 @@ class Login extends React.Component {
     
 }
 
-export default Login;
+export default Register;
 
