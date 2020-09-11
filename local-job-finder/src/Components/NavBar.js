@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Row, Col, Button, Card, CardHeader, CardFooter, CardBody, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Table} from 'reactstrap';
+import React, { useState } from 'react';
+import { Row, Col, Button, Card, CardHeader, CardFooter, CardBody, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Table } from 'reactstrap';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,14 +9,14 @@ import {
 import logo from '../favicon.ico';
 
 function NavBar() {
-    const [collapsed, setCollapsed] = useState(true);
-    const toggleNavbar = () => setCollapsed(!collapsed);
+  const [collapsed, setCollapsed] = useState(true);
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
-    return (
-        <Col>
-        <Navbar color="light" light>
-        <NavbarBrand href="/" className="mr-auto"><img src={logo} /> JobDash </NavbarBrand>
-        <Link to="/Login" style={{marginRight:"20px"}} >Sign in</Link>
+  return (
+    <Col>
+      <Navbar color="light" light>
+        <NavbarBrand href="/" className="mr-auto">{/*<img src={logo} />*/} JobDash </NavbarBrand>
+        <Link to="/Login" style={{ marginRight: "20px" }} >Sign in</Link>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
@@ -41,9 +41,9 @@ function NavBar() {
         </Collapse>
       </Navbar>
 
-      
-      </Col>
-    );
+
+    </Col>
+  );
 }
 
 export default NavBar
