@@ -20,6 +20,7 @@ import {
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+    <App />
     <NavBar/>
     <Switch>
           <Route path="/Home">

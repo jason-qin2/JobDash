@@ -9,53 +9,25 @@ import Landing from './Components/Landing'
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">About</Link>
-            </li>
-            <li>
-              <Link to="/Users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+  }
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/Home">
-            <Landing />
-          </Route>
-          <Route path="/">
-            <Landing />
-          </Route>
-          <Route path="/About">
-            <About />
-          </Route>
-          <Route path="/Users">
-            <h2>Users</h2>
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+  callAPI() {
+    fetch("http://localhost:9000/testAPI")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+  }
 
-function Home() {
-  return <Landing></Landing>
+  componentWillMount() {
+    this.callAPI();
+  }
+  render() {
+    return(
+      <p className="App-intro">;{this.state.apiResponse}</p>
+    );
+  }
 }
-
-function AboutPage() {
-  return <About></About>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
+export default App;
