@@ -26,7 +26,7 @@ class App extends React.Component {
   }
   render() {
     return(
-      <p className="App-intro">;{this.state.apiResponse}</p>
+      <p className="App-intro">{this.state.apiResponse}</p>
     );
   }
 }
