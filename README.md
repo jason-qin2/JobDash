@@ -2,8 +2,10 @@
 A web app where users can hire people to complete simple residential jobs
 ##Installation
 download/clone the repository to you computer
-##Usage
-go into the JobDash folder through your command shell
+
+## Usage
+
+Go into the JobDash folder through your command shell
 Then to start the backend:
 ```bash
 cd api
@@ -16,4 +18,4 @@ Go back to the JobDash folder and
 cd local-job-finder
 npm start
 ```
-The front will be on http://localhost:3000/
+The fronted will be on http://localhost:3000/
